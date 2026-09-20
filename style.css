@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* Navigation */
+
+header {
+    background: #172554;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.tagline {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+button {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+
+    background: white;
+    color: #1e3a8a;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* General Sections */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 30%;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.icon {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+
+/* Contact */
+
+.contact {
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+
+.contact button {
+    margin-top: 25px;
+    background: #2563eb;
+    color: white;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #172554;
+    color: white;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
